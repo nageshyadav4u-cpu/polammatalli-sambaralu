@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>శ్రీ బురగాన పోలమ్మ గ్రామదేవత సంబరాలు</title>
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts for Telugu Text -->
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&family=Suranna&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Ramabhadra', sans-serif;
+            background-color: #5B0606; /* Deep Maroon */
+        }
+        .title-font {
+            font-family: 'Suranna', serif;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col items-center antialiased">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-md bg-[#420202] py-3 px-3 sticky top-0 z-40 shadow-xl border-b-2 border-amber-500">
+        <div class="flex items-center justify-between gap-2">
+            <!-- Left Side Image Icon -->
+            <img src="https://tse3.mm.bing.net/th/id/OIP.GHKAc28CK4ar36hNLE-uvwHaHa?r=0&w=2500&h=2500&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Icon" class="w-10 h-10 rounded-full object-cover shrink-0 border border-amber-400 shadow-md">
+            
+            <!-- Title Container -->
+            <div class="text-center flex-1">
+                <h1 class="title-font text-xl sm:text-2xl font-black bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-500 bg-clip-text text-transparent tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] leading-tight">
+                    శ్రీశ్రీశ్రీ బురగాన పోలమ్మ తల్లి సంబరాలు
+                </h1>
+                <p class="text-sm font-bold text-amber-300 tracking-wider mt-0.5 drop-shadow">
+                    బూరగాం-2027
+                </p>
+            </div>
+            
+            <!-- Right Side Image Icon -->
+            <img src="https://tse3.mm.bing.net/th/id/OIP.GHKAc28CK4ar36hNLE-uvwHaHa?r=0&w=2500&h=2500&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Icon" class="w-10 h-10 rounded-full object-cover shrink-0 border border-amber-400 shadow-md">
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="w-full max-w-md px-4 py-4 space-y-6 flex-grow pb-16">
+
+        <!-- Banner Image Section -->
+        <div class="w-full h-48 bg-gradient-to-br from-yellow-700 to-amber-900 rounded-xl overflow-hidden border-2 border-yellow-500 relative shadow-xl shadow-black/30">
+            <div id="bannerSlider" class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar">
+                <div class="w-full h-full shrink-0 snap-center">
+                    <img src="https://scontent.fvtz6-1.fna.fbcdn.net/v/t39.30808-6/749355805_1462183655959232_4955794868753677832_n.jpg?stp=dst-jpg_tt6&cstp=mx1774x887&ctp=s1774x887&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XCw0FqmtpqQQ7kNvwE_3OTz&_nc_oc=Adrl-ltN9kGs7zMtqSk_EMq_UWM2h5WesGTt62KrijAEB1ZPnnKCRHRxOnhtmKY54ntMQAHj1EVsKTVkjTAk3E3H&_nc_zt=23&_nc_ht=scontent.fvtz6-1.fna&_nc_gid=a2o958xyjVGXbj83_I0zVw&_nc_ss=7b2a8&oh=00_AQA8GanUDozMO83q-rMZB7m25LL6KAxcLERki77LtNdmGg&oe=6A6110DE" alt="Banner 1" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full h-full shrink-0 snap-center">
+                    <img src="https://scontent.fvtz6-1.fna.fbcdn.net/v/t39.30808-6/750463920_1462202115957386_1084127353928691562_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x1024&ctp=s1536x1024&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mr3K0UV3c6gQ7kNvwGkEuPB&_nc_oc=Ado_-nqf5uWz4iWGDvkP_6apYbU7N_89eETMIGFgZVoxvGazuIWf0svD7eAkdUIELboAlkl_5xJX6e0FEYO3-plZ&_nc_zt=23&_nc_ht=scontent.fvtz6-1.fna&_nc_gid=pZc5ZW-3KQw8ZWBNYzxsVw&_nc_ss=7b2a8&oh=00_AQAU0YDaWS_jvK7SQcPzZE-c_KCXIZPS7YKuNwJe1N0bHQ&oe=6A610989" alt="Banner 2" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Financial Dashboard -->
+        <div class="grid grid-cols-2 gap-3">
+            <div class="bg-emerald-800 p-3 rounded-xl shadow-md border border-emerald-500 text-center">
+                <p class="text-xs text-emerald-100">మొత్తం వసూళ్లు</p>
+                <p id="dashDonations" class="text-lg font-bold mt-0.5 text-white">₹0/-</p>
+            </div>
+            <div class="bg-red-700 p-3 rounded-xl shadow-md border border-red-500 text-center">
+                <p class="text-xs text-red-100">మొత్తం ఖర్చులు</p>
+                <p id="dashExpenses" class="text-lg font-bold mt-0.5 text-white">₹0/-</p>
+            </div>
+        </div>
+        
+        <!-- Balance Row -->
+        <div class="w-full bg-[#facc15] text-stone-950 p-3 rounded-xl text-center font-bold border-2 border-amber-400 shadow-lg">
+            <span class="text-xs font-bold uppercase tracking-wider block opacity-90">💥 కమిటీ వద్ద మిగిలివున్న నికర డబ్బులు 💥</span>
+            <span id="dashBalance" class="text-2xl font-black text-red-900">₹0/-</span>
+        </div>
+
+        <!-- DONATE HERE BUTTON (Highlighted Prominently) -->
+        <button onclick="openDonateModal()" class="w-full bg-gradient-to-r from-emerald-500 via-green-600 to-emerald-700 hover:from-emerald-600 hover:to-emerald-800 text-white font-black text-lg py-4 px-4 rounded-xl shadow-xl border-2 border-emerald-300 transition transform active:scale-98 flex justify-between items-center cursor-pointer animate-pulse">
+            <span class="flex items-center gap-2">
+                <span class="text-2xl">🙏</span>
+                <span>విరాళం ఇవ్వండి (Donate Here)</span>
+            </span>
+            <span class="bg-white text-emerald-900 text-xs px-2.5 py-1 rounded-full font-extrabold shadow">UPI / Bank ➔</span>
+        </button>
+
+        <!-- Action Buttons -->
+        <div class="space-y-3">
+            <button onclick="openDonorsModal()" class="w-full bg-amber-500 hover:bg-amber-600 font-bold py-3.5 px-4 rounded-xl shadow-md transition flex justify-between items-center text-stone-900 cursor-pointer">
+                <span>🤝 దాతల వివరాలు చూడండి</span>
+                <span>➔</span>
+            </button>
+
+            <button onclick="openExpensesModal()" class="w-full bg-amber-500 hover:bg-amber-600 font-bold py-3.5 px-4 rounded-xl shadow-md transition flex justify-between items-center text-stone-900 cursor-pointer">
+                <span>📊 ఖర్చుల వివరాలు చూడండి</span>
+                <span>➔</span>
+            </button>
+
+            <!-- Committee Members Button -->
+            <button onclick="openCommitteeModal()" class="w-full bg-amber-500 hover:bg-amber-600 font-bold py-3.5 px-4 rounded-xl shadow-md transition flex justify-between items-center text-stone-900 cursor-pointer">
+                <span>👥 కమిటీ సభ్యుల వివరాలు (కులాల వారీగా)</span>
+                <span>➔</span>
+            </button>
+
+            <!-- Facebook Link Banner Button -->
+            <a href="https://www.facebook.com/share/17Zm5EKbV6/" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-600 hover:bg-blue-700 font-bold py-3.5 px-4 rounded-xl shadow-md transition flex justify-between items-center text-white cursor-pointer">
+                <span class="flex items-center gap-2">
+                    <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    ఫేస్‌బుక్‌లో లేటెస్ట్ అప్‌డేట్స్ చూడండి
+                </span>
+                <span>➔</span>
+            </a>
+        </div>
+
+        <!-- Dynamic Daily Updates Section -->
+        <div class="space-y-3">
+            <h2 class="text-lg font-bold text-yellow-400 flex items-center gap-2">
+                <span>📅</span> రోజువారీ అప్డేట్స్
+            </h2>
+            <div id="updatesListContainer" class="space-y-3"></div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+
+    <!-- Donate Bank Details Modal -->
+    <div id="donateModal" class="fixed inset-0 bg-black/75 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white text-stone-900 rounded-2xl w-full max-w-sm overflow-hidden shadow-2xl flex flex-col">
+            <div class="p-4 bg-emerald-800 text-white flex justify-between items-center">
+                <h3 class="font-bold text-lg flex items-center gap-2">
+                    <span>💳</span> బ్యాంక్ & UPI వివరాలు
+                </h3>
+                <button onclick="closeDonateModal()" class="text-2xl font-bold leading-none cursor-pointer">&times;</button>
+            </div>
+            
+            <div class="p-5 space-y-4 text-sm">
+                <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3 text-center">
+                    <p class="text-xs text-emerald-800 font-bold">శ్రీ బురగాన పోలమ్మ తల్లి సంబరాల నిధికి మీ విరాళం సమర్పించండి</p>
+                </div>
+
+                <!-- UPI ID Section -->
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs space-y-1 text-center">
+                    <span class="text-stone-500 font-bold block text-[10px]">UPI ID:</span>
+                    <div class="flex justify-center items-center gap-2">
+                        <span class="font-black text-amber-900 text-sm font-mono tracking-wide">8143765300@cnrb</span>
+                        <button onclick="copyToClipboard('8143765300@cnrb')" class="bg-amber-200 hover:bg-amber-300 text-amber-900 font-bold px-2 py-0.5 rounded text-[10px] cursor-pointer">
+                            📋 కాపీ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bank Account Details Card -->
+                <div class="bg-stone-50 border border-stone-200 rounded-xl p-3.5 space-y-2.5 text-xs">
+                    <div>
+                        <span class="text-stone-500 font-bold block text-[10px]">బ్యాంక్ పేరు (Bank Name):</span>
+                        <span class="font-black text-stone-900 text-sm">CANARA BANK (కెనరా బ్యాంక్)</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center border-t pt-2">
+                        <div>
+                            <span class="text-stone-500 font-bold block text-[10px]">ఖాతా నంబర్ (Account Number):</span>
+                            <span class="font-black text-emerald-700 text-sm font-mono tracking-wider">5737101006411</span>
+                        </div>
+                        <button onclick="copyToClipboard('5737101006411')" class="bg-stone-200 hover:bg-stone-300 text-stone-800 font-bold px-2 py-1 rounded text-[10px] cursor-pointer">
+                            📋 కాపీ
+                        </button>
+                    </div>
+
+                    <div class="flex justify-between items-center border-t pt-2">
+                        <div>
+                            <span class="text-stone-500 font-bold block text-[10px]">IFSC కోడ్ (IFSC Code):</span>
+                            <span class="font-black text-stone-900 text-sm font-mono">CNRB0005737</span>
+                        </div>
+                        <button onclick="copyToClipboard('CNRB0005737')" class="bg-stone-200 hover:bg-stone-300 text-stone-800 font-bold px-2 py-1 rounded text-[10px] cursor-pointer">
+                            📋 కాపీ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick UPI Pay Button Section -->
+                <div class="space-y-2 pt-1">
+                    <button onclick="payViaUPI()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl shadow-md transition flex justify-center items-center gap-2 cursor-pointer text-sm">
+                        <span>📲</span> UPI యాప్‌తో చెల్లించండి (GPay/PhonePe)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="donorsModal" class="fixed inset-0 bg-black/70 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white text-stone-900 rounded-2xl w-full max-w-sm max-h-[75vh] flex flex-col shadow-2xl">
+            <div class="p-4 border-b flex justify-between items-center bg-emerald-700 text-white rounded-t-2xl">
+                <h3 class="font-bold text-lg">🤝 దాతల వివరాలు (వసూళ్లు)</h3>
+                <button onclick="closeDonorsModal()" class="text-2xl font-bold cursor-pointer">&times;</button>
+            </div>
+            <div id="donorsListContainer" class="p-4 overflow-y-auto flex-grow space-y-3"></div>
+        </div>
+    </div>
+
+    <div id="expensesModal" class="fixed inset-0 bg-black/70 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white text-stone-900 rounded-2xl w-full max-w-sm max-h-[75vh] flex flex-col shadow-2xl">
+            <div class="p-4 border-b flex justify-between items-center bg-red-700 text-white rounded-t-2xl">
+                <h3 class="font-bold text-lg">📊 ఖర్చుల వివరాలు</h3>
+                <button onclick="closeExpensesModal()" class="text-2xl font-bold cursor-pointer">&times;</button>
+            </div>
+            <div id="expensesListContainer" class="p-4 overflow-y-auto flex-grow space-y-3"></div>
+        </div>
+    </div>
+
+    <!-- Committee Members Modal (Caste-wise: Name, Phone) -->
+    <div id="committeeModal" class="fixed inset-0 bg-black/70 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white text-stone-900 rounded-2xl w-full max-w-sm max-h-[75vh] flex flex-col shadow-2xl">
+            <div class="p-4 border-b flex justify-between items-center bg-amber-600 text-white rounded-t-2xl">
+                <h3 class="font-bold text-lg">👥 కమిటీ సభ్యుల వివరాలు</h3>
+                <button onclick="closeCommitteeModal()" class="text-2xl font-bold cursor-pointer">&times;</button>
+            </div>
+            <div id="committeeListContainer" class="p-4 overflow-y-auto flex-grow space-y-4"></div>
+        </div>
+    </div>
+
+    <div id="updatesModal" class="fixed inset-0 bg-black/70 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white text-stone-900 rounded-2xl w-full max-w-sm shadow-2xl overflow-hidden max-h-[85vh] flex flex-col">
+            <div class="p-4 bg-red-800 text-white flex justify-between items-center shrink-0">
+                <span id="modalDate" class="text-xs bg-red-900 px-2.5 py-1 rounded font-bold"></span>
+                <button onclick="closeUpdateModal()" class="text-2xl font-bold leading-none cursor-pointer">&times;</button>
+            </div>
+            <div class="p-5 space-y-4 overflow-y-auto">
+                <h3 id="modalTitle" class="font-bold text-lg text-red-900 border-b pb-1"></h3>
+                <p id="modalBody" class="text-stone-600 text-sm leading-relaxed text-justify whitespace-pre-line"></p>
+                <div id="modalImagesContainer" class="space-y-2 mt-2">
+                    <img id="modalImage1" src="" alt="Photo 1" class="w-full h-auto rounded-xl border shadow-xs hidden max-h-52 object-cover">
+                    <img id="modalImage2" src="" alt="Photo 2" class="w-full h-auto rounded-xl border shadow-xs hidden max-h-52 object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Data Sync Logic -->
+    <script>
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx-Mh32u9ES50TLHAiu_AHj5JGQXQ-_YJm_CnObF9mGxAU8eFSLoU80ltKcyAXGC3Ti/exec";
+
+        // Updated UPI ID
+        const UPI_ID = "8143765300@cnrb"; 
+        const ACCOUNT_NAME = "Sri Buragana Polamma Sambaralu";
+
+        let database = {
+            donations: [],
+            expenses: [],
+            updates: [],
+            committee: []
+        };
+
+        function parseDate(dateStr) {
+            if(!dateStr) return new Date(0);
+            let parts = String(dateStr).split('/');
+            if(parts.length === 3) {
+                return new Date(parts[2], parts[1] - 1, parts[0]);
+            }
+            return new Date(dateStr);
+        }
+
+        async function fetchLiveData() {
+            if (!GOOGLE_SCRIPT_URL) return;
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL);
+                const data = await response.json();
+                if (data) {
+                    database.donations = data.donations || [];
+                    database.expenses = data.expenses || [];
+                    database.updates = data.updates || [];
+                    database.committee = data.committee || [];
+                }
+                updateDashboard();
+            } catch (err) {
+                console.error("Error fetching live data:", err);
+            }
+        }
+
+        function updateDashboard() {
+            let totalDonations = database.donations.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+            let totalExpenses = database.expenses.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+            let netBalance = totalDonations - totalExpenses;
+
+            document.getElementById('dashDonations').innerText = `₹${totalDonations.toLocaleString('en-IN')}/-`;
+            document.getElementById('dashExpenses').innerText = `₹${totalExpenses.toLocaleString('en-IN')}/-`;
+            document.getElementById('dashBalance').innerText = `₹${netBalance.toLocaleString('en-IN')}/-`;
+
+            renderLists();
+        }
+
+        function renderLists() {
+            document.getElementById('donorsListContainer').innerHTML = database.donations.length > 0 ? database.donations.map((item, idx) => `
+                <div class="flex justify-between items-center border-b pb-2 text-stone-800">
+                    <div class="pr-2">
+                        <p class="font-bold text-sm">${idx + 1}. ${item.text}</p>
+                        <p class="text-[10px] text-stone-500">📅 ${item.date}</p>
+                    </div>
+                    <span class="font-bold text-emerald-600 shrink-0">₹${Number(item.amount).toLocaleString('en-IN')}/-</span>
+                </div>
+            `).join('') : '<p class="text-stone-500 text-center py-2 text-sm">వివరాలు లేవు</p>';
+
+            document.getElementById('expensesListContainer').innerHTML = database.expenses.length > 0 ? database.expenses.map((item, idx) => `
+                <div class="flex justify-between items-center border-b pb-2 text-stone-800">
+                    <div class="pr-2">
+                        <p class="font-bold text-sm">${idx + 1}. ${item.text}</p>
+                        <p class="text-[10px] text-stone-500">📅 ${item.date}</p>
+                    </div>
+                    <span class="font-bold text-red-600 shrink-0">₹${Number(item.amount).toLocaleString('en-IN')}/-</span>
+                </div>
+            `).join('') : '<p class="text-stone-500 text-center py-2 text-sm">వివరాలు లేవు</p>';
+
+            renderCommitteeList();
+
+            let sortedUpdates = [...database.updates].sort((a, b) => parseDate(b.date) - parseDate(a.date));
+
+            document.getElementById('updatesListContainer').innerHTML = sortedUpdates.length > 0 ? sortedUpdates.map((item, index) => {
+                return `
+                <div onclick="openUpdateModalByIndex(${index})" class="bg-white text-stone-900 p-4 rounded-xl shadow border-l-4 border-yellow-500 flex justify-between items-center cursor-pointer hover:bg-stone-50 transition">
+                    <div class="flex-1">
+                        <span class="text-[10px] text-red-700 font-bold block mb-0.5">${item.date}</span>
+                        <h3 class="font-bold text-sm text-stone-800 leading-snug">${item.title}</h3>
+                        <span class="inline-block mt-2 text-[10px] bg-red-50 text-red-700 px-2 py-0.5 rounded font-bold border border-red-100">సమాచారం & ఫోటోలు ➔</span>
+                    </div>
+                    ${item.image1 ? `
+                    <div class="w-12 h-12 rounded-lg overflow-hidden shrink-0 ml-2 shadow-inner">
+                        <img src="${item.image1}" class="w-full h-full object-cover">
+                    </div>` : '<div class="text-xl pl-2">📢</div>'}
+                </div>
+            `}).join('') : '<p class="text-yellow-200 text-center py-2 text-sm">అప్‌డేట్స్ లేవు</p>';
+        }
+
+        function renderCommitteeList() {
+            const container = document.getElementById('committeeListContainer');
+            if (!database.committee || database.committee.length === 0) {
+                container.innerHTML = '<p class="text-stone-500 text-center py-2 text-sm">కమిటీ వివరాలు ఇంకా నమోదు చేయలేదు</p>';
+                return;
+            }
+
+            const grouped = {};
+            database.committee.forEach(item => {
+                const caste = item.caste && item.caste.trim() !== "" ? item.caste.trim() : 'ఇతర సభ్యులు';
+                if (!grouped[caste]) grouped[caste] = [];
+                grouped[caste].push(item);
+            });
+
+            let html = '';
+            for (const caste in grouped) {
+                html += `
+                    <div class="bg-amber-50 rounded-xl p-3 border border-amber-200 shadow-xs">
+                        <h4 class="font-bold text-amber-900 text-sm border-b border-amber-200 pb-1 mb-2 flex items-center gap-1.5">
+                            <span>🚩</span> ${caste}
+                        </h4>
+                        <div class="space-y-2">
+                            ${grouped[caste].map((member, idx) => `
+                                <div class="flex justify-between items-center text-xs text-stone-800 border-b border-amber-100/60 pb-1">
+                                    <span class="font-bold text-stone-900">${idx + 1}. ${member.name}</span>
+                                    ${member.phone && member.phone !== "undefined" && member.phone !== "" ? `
+                                        <a href="tel:${member.phone}" class="bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1 shadow-xs">
+                                            📞 ${member.phone}
+                                        </a>
+                                    ` : '<span class="text-stone-400 text-[10px]">-</span>'}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            container.innerHTML = html;
+        }
+
+        function openUpdateModalByIndex(index) {
+            let sortedUpdates = [...database.updates].sort((a, b) => parseDate(b.date) - parseDate(a.date));
+            let item = sortedUpdates[index];
+            if (!item) return;
+
+            document.getElementById('modalDate').innerText = item.date || '';
+            document.getElementById('modalTitle').innerText = item.title || '';
+            document.getElementById('modalBody').innerText = item.body || '';
+            
+            const mImg1 = document.getElementById('modalImage1');
+            const mImg2 = document.getElementById('modalImage2');
+            
+            if (item.image1 && item.image1 !== "undefined" && item.image1 !== "") {
+                mImg1.src = item.image1;
+                mImg1.classList.remove('hidden');
+            } else {
+                mImg1.classList.add('hidden');
+            }
+            
+            if (item.image2 && item.image2 !== "undefined" && item.image2 !== "") {
+                mImg2.src = item.image2;
+                mImg2.classList.remove('hidden');
+            } else {
+                mImg2.classList.add('hidden');
+            }
+
+            document.getElementById('updatesModal').classList.remove('hidden');
+        }
+
+        // Donate & Copy Functions
+        function openDonateModal() { document.getElementById('donateModal').classList.remove('hidden'); }
+        function closeDonateModal() { document.getElementById('donateModal').classList.add('hidden'); }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert(`కాపీ చేయబడింది: ${text}`);
+            }).catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+        }
+
+        function payViaUPI() {
+            let upiUrl = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${encodeURIComponent(ACCOUNT_NAME)}&cu=INR`;
+            window.location.href = upiUrl;
+        }
+
+        // Auto Slider (6 Seconds)
+        const slider = document.getElementById('bannerSlider');
+        setInterval(() => {
+            if (slider) {
+                if (slider.scrollLeft >= (slider.scrollWidth - slider.clientWidth) - 1) {
+                    slider.scrollLeft = 0;
+                } else {
+                    slider.scrollLeft += slider.clientWidth;
+                }
+            }
+        }, 6000);
+
+        function openDonorsModal() { document.getElementById('donorsModal').classList.remove('hidden'); }
+        function closeDonorsModal() { document.getElementById('donorsModal').classList.add('hidden'); }
+        
+        function openExpensesModal() { document.getElementById('expensesModal').classList.remove('hidden'); }
+        function closeExpensesModal() { document.getElementById('expensesModal').classList.add('hidden'); }
+
+        function openCommitteeModal() { document.getElementById('committeeModal').classList.remove('hidden'); }
+        function closeCommitteeModal() { document.getElementById('committeeModal').classList.add('hidden'); }
+
+        function closeUpdateModal() { document.getElementById('updatesModal').classList.add('hidden'); }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('donateModal')) closeDonateModal();
+            if (event.target == document.getElementById('donorsModal')) closeDonorsModal();
+            if (event.target == document.getElementById('expensesModal')) closeExpensesModal();
+            if (event.target == document.getElementById('committeeModal')) closeCommitteeModal();
+            if (event.target == document.getElementById('updatesModal')) closeUpdateModal();
+        }
+
+        // Initial Load
+        fetchLiveData();
+    </script>
+</body>
+</html>
